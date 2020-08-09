@@ -29,3 +29,5 @@ MDN https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Con
 - .env ファイルに入れたいパスワードなどを書く（注：`REACT_APP_`と辺数名の頭につけること）
 - .env ファイルを.gitignore に追加
 - 使いたい項目で、例えば`const url = rocess.env.REACT_APP_WEBHOOK_URL`と指定
+
+http://masyumaroking.com/31

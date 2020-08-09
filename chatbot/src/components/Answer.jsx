@@ -1,19 +1,36 @@
 import React from "react";
-// import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, createStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 
-// const useStyles = makeStyles((theme) => {
-//   root: {
-//   }
-// });
+const useStyles = makeStyles(() =>
+  createStyles({
+    button: {
+      borderColor: "mediumaquamarine",
+      color: "white",
+      fontWeight: 600,
+      marginBottom: "8px",
+      "&:hover": {
+        backgroundColor: "coral",
+        color: "white",
+      },
+    },
+  })
+);
 
 const Answer = (props) => {
-  // const classes = useStyles();
+  // useStylesの返り値を定数classesとする → buttonタグの中で使う
+  const classes = useStyles();
 
   return (
-    <div>
-      <Button variant="contained">{props.content}</Button>
-    </div>
+    <Button
+      className={classes.button}
+      variant="contained"
+      onClick={() => {
+        props.select(props.content, props.nextId);
+      }}
+    >
+      {props.content}
+    </Button>
   );
 };
 

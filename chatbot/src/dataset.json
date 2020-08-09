@@ -1,0 +1,88 @@
+{
+  "init": {
+    "answers": [
+      { "content": "仕事を依頼したい", "nextId": "job_offer" },
+      {
+        "content": "相談したい",
+        "nextId": "consultant"
+      },
+      { "content": "一緒に勉強したい！", "nextId": "together" }
+    ],
+    "question": "こんにちは！\nkafuへのご用件はなんでしょうか？"
+  },
+  "job_offer": {
+    "answers": [
+      { "content": "Webサイトを制作してほしい", "nextId": "website" },
+      { "content": "Webアプリを開発してほしい", "nextId": "webapp" },
+      { "content": "自動化ツールを作ってほしい", "nextId": "automation_tool" },
+      { "content": "その他", "nextId": "other_jobs" }
+    ],
+    "question": "どのようなお仕事でしょうか？"
+  },
+  "website": {
+    "answers": [
+      { "content": "問い合わせる", "nextId": "contact" },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "Webサイト制作についてですね。コチラからお問い合わせできます。"
+  },
+  "webapp": {
+    "answers": [
+      { "content": "問い合わせる", "nextId": "contact" },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "Webアプリ開発についてですね。コチラからお問い合わせできます。"
+  },
+  "automation_tool": {
+    "answers": [
+      { "content": "問い合わせる", "nextId": "contact" },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "自動化ツール開発についてですね。コチラからお問い合わせできます。"
+  },
+  "other_jobs": {
+    "answers": [
+      { "content": "問い合わせる", "nextId": "contact" },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "その他についてですね。コチラからお問い合わせできます。"
+  },
+  "consultant": {
+    "answers": [
+      {
+        "content": "twitterの発信を見る",
+        "nextId": "https://twitter.com/knfjed"
+      },
+      { "content": "どんな活動をしているの？", "nextId": "portfolio" },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "未経験からフロントエンドエンジニアへの転職を目指しています！\n日々、学習の積み上げを発信しています"
+  },
+  "portfolio": {
+    "answers": [
+      {
+        "content": "ポートフォリオを見たい",
+        "nextId": "https://twitter.com/knfjed"
+      },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "2019年12月からプログラミング学習を始めました！🎉\n自分で一から新しいものをを作っていくことがたまらなく楽しいです！\n現在、転職活動中です！"
+  },
+  "community_activity": {
+    "answers": [
+      {
+        "content": "どんなスキルがあるの？",
+        "nextId": "https://twitter.com/knfjed"
+      },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "React / JavaScript / Node.js / HTML / CSS を学習しました！"
+  },
+  "together": {
+    "answers": [
+      { "content": "DMする", "nextId": "https://twitter.com/knfjed" },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "ぜひ！DMください⭐️"
+  }
+}

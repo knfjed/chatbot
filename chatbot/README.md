@@ -22,3 +22,10 @@ MDN https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Con
 
 最初に条件式
 （）内に真または偽の場合に返す JSX を書く
+
+### .env  ファイルの使い方
+
+- `npm install dotenv --save`
+- .env ファイルに入れたいパスワードなどを書く（注：`REACT_APP_`と辺数名の頭につけること）
+- .env ファイルを.gitignore に追加
+- 使いたい項目で、例えば`const url = rocess.env.REACT_APP_WEBHOOK_URL`と指定
